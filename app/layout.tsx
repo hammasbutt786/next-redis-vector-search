@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Figtree } from "next/font/google";
 import "./globals.css";
-import Wrapper from "@/components/clerk/wrapper";
-import { Suspense } from "react";
 import { cn } from "@/lib/utils";
 
 const figtree = Figtree({subsets:['latin'],variable:'--font-sans'});
