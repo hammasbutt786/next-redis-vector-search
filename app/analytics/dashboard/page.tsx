@@ -8,13 +8,24 @@ const BLUE = "#378ADD";
 const GREEN = "#1D9E75";
 const RED = "#E24B4A";
 const GRID = "rgba(128,128,128,0.12)";
+type ChartRef = {
+    chartInstance: any; // replace with actual chart type if available
+} | null;
 
-function destroyChart(ref:any) {
+function destroyChart(ref: React.RefObject<ChartRef>) {
     if (ref.current?.chartInstance) {
         ref.current.chartInstance.destroy();
         ref.current.chartInstance = null;
     }
 }
+
+// function destroyChart(ref:any) {
+//     if (ref.current?.chartInstance) {
+//         ref.current.chartInstance.destroy();
+//         ref.current.chartInstance = null;
+//     }
+// }
+
 
 function buildChart(canvasRef, config) {
     destroyChart(canvasRef);
