@@ -9,7 +9,7 @@ const GREEN = "#1D9E75";
 const RED = "#E24B4A";
 const GRID = "rgba(128,128,128,0.12)";
 
-function destroyChart(ref) {
+function destroyChart(ref:any) {
     if (ref.current?.chartInstance) {
         ref.current.chartInstance.destroy();
         ref.current.chartInstance = null;
