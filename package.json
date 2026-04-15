@@ -13,6 +13,7 @@
     "@clerk/ui": "^1.2.4",
     "@hugeicons/core-free-icons": "^4.1.0",
     "@hugeicons/react": "^1.1.6",
+    "babel-plugin-react-compiler": "^1.0.0",
     "chart.js": "^4.5.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

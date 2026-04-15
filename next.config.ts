@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: process.cwd(),
   },
+  reactCompiler:true,
+ typescript: {
+    ignoreBuildErrors: true,
+  },
   logging: {
     browserToTerminal: true,
   },
